@@ -1,4 +1,4 @@
-package com.apolis.myapplication
+package com.apolis.myapplication.fragments
 
 
 import android.os.Bundle
@@ -7,17 +7,19 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 
+import com.apolis.myapplication.R
+
 /**
  * A simple [Fragment] subclass.
  */
-class HomepageFragment : Fragment() {
+class Homepage2Fragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_homepage, container, false)
+        return inflater.inflate(R.layout.fragment_homepage2, container, false)
     }
 
 

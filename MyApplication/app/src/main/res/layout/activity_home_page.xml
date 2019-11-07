@@ -9,7 +9,7 @@
         android:layout_weight="1"
         android:id="@+id/login_page_emailText"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
         android:text="Email"
@@ -19,25 +19,28 @@
         android:layout_weight="1"
         android:id="@+id/login_page_passwordText"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
         android:text="Password"
         android:textSize="25dp" />
 
-    <fragment
+    <Button
+        android:id="@+id/button_homepage_switch_fragment"
         android:layout_weight="1"
-        android:id="@+id/frag_homepage_one"
-        android:name="com.apolis.myapplication.HomepageFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:text="PUSH BUTTON TO CHANGE FRAGMENT"
+        android:textSize="37dp" />
+
+    <FrameLayout
+        android:id="@+id/fragment_homepage"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="0dp" />
 
-    <fragment
-        android:layout_weight="1"
-        android:id="@+id/frag_homepage_two"
-        android:name="com.apolis.myapplication.HomepageFragment"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
 
 
 </LinearLayout>

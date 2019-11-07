@@ -1,10 +1,11 @@
-package com.apolis.myapplication
+package com.apolis.myapplication.activities
 
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.apolis.myapplication.R
 import kotlinx.android.synthetic.main.activity_register.*
 
 class Register : AppCompatActivity() {
