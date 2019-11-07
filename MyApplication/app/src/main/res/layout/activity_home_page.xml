@@ -2,9 +2,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="15dp">
+    android:padding="15dp"
+    android:weightSum="4">
 
     <TextView
+        android:layout_weight="1"
         android:id="@+id/login_page_emailText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -14,6 +16,7 @@
         android:textSize="25dp" />
 
     <TextView
+        android:layout_weight="1"
         android:id="@+id/login_page_passwordText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -21,6 +24,20 @@
         android:layout_marginTop="20dp"
         android:text="Password"
         android:textSize="25dp" />
+
+    <fragment
+        android:layout_weight="1"
+        android:id="@+id/frag_homepage_one"
+        android:name="com.apolis.myapplication.HomepageFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+    <fragment
+        android:layout_weight="1"
+        android:id="@+id/frag_homepage_two"
+        android:name="com.apolis.myapplication.HomepageFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
 
 </LinearLayout>

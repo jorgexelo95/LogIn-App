@@ -3,9 +3,9 @@ package com.apolis.myapplication
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import kotlinx.android.synthetic.main.activity_login_page.*
+import kotlinx.android.synthetic.main.activity_home_page.*
 
-class LoginPage : AppCompatActivity() {
+class HomePageActivity : AppCompatActivity() {
     override fun onStart() {
         super.onStart()
         Log.d("Jay", "Login succcesful  start")
@@ -37,7 +37,9 @@ class LoginPage : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         Log.d("Jay", "Login successful create")
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_login_page)
+        setContentView(R.layout.activity_home_page)
+
+
 
         login_page_emailText.text = intent.getStringExtra("EMAIL")
         login_page_passwordText.text = intent.getStringExtra("PASSWORD")

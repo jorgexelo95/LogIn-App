@@ -3,7 +3,6 @@ package com.apolis.myapplication
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
-import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_login.*
@@ -54,7 +53,7 @@ class Login : AppCompatActivity() {
             var pass = login_pass.text.toString()
             if(user == "test@gmail.com" && pass == "123456"){
                 Toast.makeText(this,"SUCCESS", Toast.LENGTH_LONG ).show()
-                var intent: Intent = Intent(this, LoginPage::class.java)
+                var intent: Intent = Intent(this, HomePageActivity::class.java)
                 intent.putExtra("EMAIL", user)
                 intent.putExtra("PASSWORD", pass)
                 startActivity(intent)

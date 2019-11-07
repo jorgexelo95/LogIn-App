@@ -49,7 +49,7 @@ class Register : AppCompatActivity() {
         button_register.setOnClickListener {
             var email = editText_registerEmail.text.toString()
             var password = editText_registerPassword.text.toString()
-            val welcome: Intent = Intent(this, LoginPage::class.java)
+            val welcome = Intent(this, HomePageActivity::class.java)
             welcome.putExtra("EMAIL", email)
             welcome.putExtra("PASSWORD", password)
 
